@@ -1,3 +1,7 @@
+Project originaly created by @fedotovav https://github.com/fedotovav
+it needed to be updated for new drivers and add all the libs needed for this project.
+Thanks @fedotovav for creating this project.
+ 
 NVIDIA graphics driver setting manager based on NVAPI (https://developer.nvidia.com/nvapi)
 
 
