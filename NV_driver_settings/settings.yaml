@@ -150,7 +150,7 @@
 
 -
   name: Triple buffering
-  value: ENABLE
+  value:
   #val_options: [DISABLE, ENABLE]
 
 -
@@ -343,7 +343,7 @@
 
 -
   name: Ambient Occlusion
-  value: HIGH
+  value:
   #val_options: [OFF, LOW, MEDIUM, HIGH]
 
 -
@@ -363,37 +363,37 @@
 
 -
   name: Maximum pre-rendered frames
-  value: APP_CONTROLLED
+  value:
   #val_options: [MIN, MAX, APP_CONTROLLED]
 
 -
   name: Texture filtering - Anisotropic sample optimization
-  value: OFF
+  value:
   #val_options: [OFF, ON]
 
 -
   name: Texture filtering - Anisotropic filter optimization
-  value: OFF
+  value:
   #val_options: [OFF, ON]
 
 -
   name: Texture filtering - Trilinear optimization
-  value: OFF
+  value:
   #val_options: [OFF, ON]
 
 -
   name: Texture filtering - Negative LOD bias
-  value: OFF
+  value:
   #val_options: [OFF, ON]
 
 -
   name: Texture filtering - Quality
-  value: QUALITY
+  value:
   #val_options: [HIGHQUALITY, QUALITY, PERFORMANCE, HIGHPERFORMANCE]
 
 -
   name: Preferred refresh rate
-  value: APPLICATION_CONTROLLED
+  value:
   #val_options: [APPLICATION_CONTROLLED, HIGHEST_AVAILABLE]
 
 -
@@ -408,10 +408,10 @@
 
 -
   name: Vertical Sync
-  value: PASSIVE
+  value:
   #val_options: [PASSIVE, FORCEOFF, FORCEON, FLIPINTERVAL2, FLIPINTERVAL3, FLIPINTERVAL4]
 
 -
   name: Vertical Sync Tear Control
-  value: DISABLE
+  value:
   #val_options: [DISABLE, ENABLE]

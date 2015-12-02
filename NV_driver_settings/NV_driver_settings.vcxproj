@@ -47,6 +47,8 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Y:\Documents\Source\yaml-cpp\include;Y:\Downloads\R352-developer;C:\Program Files %28x86%29\Boost\include;$(IncludePath)</IncludePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Libs;C:\Program Files %28x86%29\Boost\lib;y:\Downloads\R352-developer\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Y:\Documents\Source\yaml-cpp\include;Y:\Downloads\R352-developer;C:\Program Files %28x86%29\Boost\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">y:\Downloads\R352-developer\x86;C:\Program Files %28x86%29\Boost\lib;Libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
