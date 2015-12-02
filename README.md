@@ -45,7 +45,9 @@ u need VC++ 2010
  
  i'v already compiled the libs of yaml under this project /Libs
  
- Compile the project under debug
+
+GREAT
+now compile the project NV settings project win32/debug
  
  
  
