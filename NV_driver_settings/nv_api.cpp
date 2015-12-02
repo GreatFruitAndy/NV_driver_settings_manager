@@ -29,6 +29,7 @@ nv_api::~nv_api()
 
 void nv_api::change_setting( Node const & setting )
 {
+
    if (setting["name"].IsNull())
       return;
 

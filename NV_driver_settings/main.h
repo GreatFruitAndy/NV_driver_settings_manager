@@ -1,20 +1,27 @@
 #pragma once
 
-#include "common/stl.h"
-#include "common/boost.h"
+//#include <stl.hpp>
+//#include <boost.h>
+
+#include "y:\Downloads\boost_1_59_0\boost\format.hpp"
 
 #include <iostream>
 #include <fstream>
 
-#include <nvapi/nvapi.h>
-#include <nvapi/NvApiDriverSettings.h>
+#include <nvapi.h>
+#include <NvApiDriverSettings.h>
 
 #pragma comment(lib, "nvapi.lib")
 
 #include <boost/bimap.hpp>
 #include <boost/program_options.hpp>
 
-#include <yaml_cpp/yaml.h>
+#include <yaml-cpp/yaml.h>
+#include <yaml-cpp/null.h>
+
+//#include "Y:\Downloads\yaml-cpp-release-0.3.0\include\yaml-cpp\null.h"
+//#include "Y:\Downloads\yaml-cpp-release-0.3.0\include\yaml-cpp\yaml.h"
+
 
 #ifdef _DEBUG
 #pragma comment(lib, "yamld.lib")

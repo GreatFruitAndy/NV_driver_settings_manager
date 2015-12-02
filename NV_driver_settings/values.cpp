@@ -150,8 +150,8 @@ void nv_api::init_map()
    //"Threaded optimization"
    dword_settings_map_[OGL_THREAD_CONTROL_ID] = list_of<rel_t>("ENABLE"          , OGL_THREAD_CONTROL_ENABLE          )
                                                               ("DISABLE"         , OGL_THREAD_CONTROL_DISABLE         )
-                                                              ("DUMP_STATS"      , OGL_THREAD_CONTROL_DUMP_STATS      )
-                                                              ("IGNORE_GET_ERROR", OGL_THREAD_CONTROL_IGNORE_GET_ERROR)
+                                                              //("DUMP_STATS"      , OGL_THREAD_CONTROL_DUMP_STATS      )
+                                                              //("IGNORE_GET_ERROR", OGL_THREAD_CONTROL_IGNORE_GET_ERROR)
                                                               ("AUTO"            , 0                                  )
                                                               ;
 
@@ -349,15 +349,15 @@ void nv_api::init_map()
                                                           ;
 
    //"Debug bits for optimus"
-   dword_settings_map_[OPTIMUS_DEBUG_ID] = list_of<rel_t>("RENDER_TRANSPORT" , OPTIMUS_DEBUG_NULL_RENDER_TRANSPORT )
+  /* dword_settings_map_[OPTIMUS_DEBUG_ID] = list_of<rel_t>("RENDER_TRANSPORT" , OPTIMUS_DEBUG_NULL_RENDER_TRANSPORT )
                                                          ("DISPLAY_TRANSPORT", OPTIMUS_DEBUG_NULL_DISPLAY_TRANSPORT)
                                                          ("AUTO"             , 0                                   )
                                                          ;
-
+														 */
    //"Maximum AA samples allowed for a given application"
-   dword_settings_map_[OPTIMUS_MAXAA_ID] = list_of<rel_t>("MIN", OPTIMUS_MAXAA_MIN)
+   /*dword_settings_map_[OPTIMUS_MAXAA_ID] = list_of<rel_t>("MIN", OPTIMUS_MAXAA_MIN)
                                                          ("MAX", OPTIMUS_MAXAA_MAX)
-                                                         ;
+                                                         ;*/
 
    //"Display the PhysX indicator"
    dword_settings_map_[PHYSXINDICATOR_ID] = list_of<rel_t>("DISABLED", PHYSXINDICATOR_DISABLED)
@@ -395,10 +395,10 @@ void nv_api::init_map()
                                                                 ;
 
    //"iGPU transcoding"
-   dword_settings_map_[SHIM_IGPU_TRANSCODING_ID] = list_of<rel_t>("DISABLE", SHIM_IGPU_TRANSCODING_DISABLE)
+ /*  dword_settings_map_[SHIM_IGPU_TRANSCODING_ID] = list_of<rel_t>("DISABLE", SHIM_IGPU_TRANSCODING_DISABLE)
                                                                  ("ENABLE" , SHIM_IGPU_TRANSCODING_ENABLE )
                                                                  ;
-
+*/
    //"Optimus flags for enabled applications"
    dword_settings_map_[SHIM_MCCOMPAT_ID] = list_of<rel_t>("INTEGRATED"   , SHIM_MCCOMPAT_INTEGRATED   )
                                                          ("ENABLE"       , SHIM_MCCOMPAT_ENABLE       )
@@ -439,7 +439,7 @@ void nv_api::init_map()
                                                                   ("IGPU_TRANSCODING"          , SHIM_RENDERING_OPTIONS_IGPU_TRANSCODING          )
                                                                   ("DISABLE_CUDA"              , SHIM_RENDERING_OPTIONS_DISABLE_CUDA              )
                                                                   ("ALLOW_CP_CAPS_FOR_VIDEO"   , SHIM_RENDERING_OPTIONS_ALLOW_CP_CAPS_FOR_VIDEO   )
-                                                                  ("ENABLE_NEW_HOOKING"        , SHIM_RENDERING_OPTIONS_ENABLE_NEW_HOOKING        )
+                                                                //  ("ENABLE_NEW_HOOKING"        , SHIM_RENDERING_OPTIONS_ENABLE_NEW_HOOKING        )
                                                                   ("DISABLE_DURING_SECURE_BOOT", SHIM_RENDERING_OPTIONS_DISABLE_DURING_SECURE_BOOT)
                                                                   ;
 
@@ -538,10 +538,10 @@ void nv_api::init_map()
                                                                ;
 
    //"Stereo - Win8 support"
-   dword_settings_map_[WKS_FEATURE_SUPPORT_CONTROL_ID] = list_of<rel_t>("OFF"                          , WKS_FEATURE_SUPPORT_CONTROL_OFF                          )
+  /* dword_settings_map_[WKS_FEATURE_SUPPORT_CONTROL_ID] = list_of<rel_t>("OFF"                          , WKS_FEATURE_SUPPORT_CONTROL_OFF                          )
                                                                        ("SRS_1714_WIN8_STEREO"         , WKS_FEATURE_SUPPORT_CONTROL_SRS_1714_WIN8_STEREO         )
                                                                        ("WIN8_STEREO_EXPORT_IF_ENABLED", WKS_FEATURE_SUPPORT_CONTROL_WIN8_STEREO_EXPORT_IF_ENABLED)
-                                                                       ;
+                                                                       ;*/
 
    //"Stereo - Dongle Support"
    dword_settings_map_[WKS_STEREO_DONGLE_SUPPORT_ID] = list_of<rel_t>("OFF", WKS_STEREO_DONGLE_SUPPORT_OFF)
@@ -583,9 +583,9 @@ void nv_api::init_map()
                                                           ;
 
    //"Dynamic tiling"
-   dword_settings_map_[PS_DYNAMIC_TILING_ID] = list_of<rel_t>("OFF", PS_DYNAMIC_TILING_OFF)
+  /* dword_settings_map_[PS_DYNAMIC_TILING_ID] = list_of<rel_t>("OFF", PS_DYNAMIC_TILING_OFF)
                                                              ("ON" , PS_DYNAMIC_TILING_ON )
-                                                             ;
+                                                             ;*/
 
    //"Texture filtering - Anisotropic sample optimization"
    dword_settings_map_[PS_TEXFILTER_ANISO_OPTS2_ID] = list_of<rel_t>("OFF", PS_TEXFILTER_ANISO_OPTS2_OFF)

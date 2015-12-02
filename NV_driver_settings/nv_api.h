@@ -1,6 +1,7 @@
 #pragma once
 
 #include "boost/assign.hpp"
+#include "boost/optional.hpp"
 
 #include "main.h"
 
@@ -45,8 +46,8 @@ private:
    typedef setting_value_id_map_t::relation   rel_t;
    typedef vector<NVDRS_SETTING>              settings_t;
 
-   typedef optional<size_t> value_id_opt_t  ;
-   typedef optional<string> value_name_opt_t;
+   typedef boost::optional<size_t> value_id_opt_t  ;
+   typedef boost::optional<string> value_name_opt_t;
 
    void print_optional_values( dword_map_t::iterator const & it, std::ostream & o_stream );
    void print_optional_id    ( dword_map_t::iterator const & it, std::ostream & o_stream );
