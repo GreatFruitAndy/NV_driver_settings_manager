@@ -79,7 +79,7 @@
 
 -
   name: Antialiasing - Line gamma
-  value: ENABLED
+  value:
   #val_options: [DISABLED, ENABLED, MIN, MAX]
 
 -
@@ -146,7 +146,7 @@
 -
   name: Threaded optimization
   value:
-  #val_options: [ENABLE, DISABLE, DUMP_STATS, IGNORE_GET_ERROR]
+  #val_options: [ENABLE, DISABLE]
 
 -
   name: Triple buffering
@@ -252,34 +252,19 @@
   #val_options: [DISABLED, ENABLED]
 
 -
-  name: Debug bits for optimus
-  value:
-  #val_options: [RENDER_TRANSPORT, DISPLAY_TRANSPORT]
-
--
-  name: Maximum AA samples allowed for a given application
-  value:
-  #val_options: [MIN, MAX]
-
--
   name: Display the PhysX indicator
   value:
   #val_options: [DISABLED, ENABLED]
 
 -
   name: Power management mode
-  value:
+  value: PREFER_MAX
   #val_options: [ADAPTIVE, PREFER_MAX, CONTROLLED, PREFER_MIN, MIN, MAX]
 
 -
   name: Frame Rate Limiter
   value:
   #val_options: [DISABLED, FPS_20, FPS_30, FPS_40, FPSMASK, GPS_WEB, FORCE_OPTIMUS_POLICY, DISALLOWED, THRESHOLD, TEMPERATURE, POWER, MODEMASK, ACCURATE, ALLOW_WINDOWED, FORCEON, ENABLED, MASK]
-
--
-  name: iGPU transcoding
-  value:
-  #val_options: [DISABLE, ENABLE]
 
 -
   name: Optimus flags for enabled applications
@@ -294,7 +279,7 @@
 -
   name: Shim Rendering Mode Options per application for Optimus
   value:
-  #val_options: [DEFAULT_RENDERING_MODE, DISABLE_ASYNC_PRESENT, EHSHELL_DETECT, FLASHPLAYER_HOST_DETECT, VIDEO_DRM_APP_DETECT, IGNORE_OVERRIDES, CHILDPROCESS_DETECT, ENABLE_DWM_ASYNC_PRESENT, PARENTPROCESS_DETECT, ALLOW_INHERITANCE, DISABLE_WRAPPERS, DISABLE_DXGI_WRAPPERS, PRUNE_UNSUPPORTED_FORMATS, ENABLE_ALPHA_FORMAT, IGPU_TRANSCODING, DISABLE_CUDA, ALLOW_CP_CAPS_FOR_VIDEO, ENABLE_NEW_HOOKING, DISABLE_DURING_SECURE_BOOT]
+  #val_options: [DEFAULT_RENDERING_MODE, DISABLE_ASYNC_PRESENT, EHSHELL_DETECT, FLASHPLAYER_HOST_DETECT, VIDEO_DRM_APP_DETECT, IGNORE_OVERRIDES, CHILDPROCESS_DETECT, ENABLE_DWM_ASYNC_PRESENT, PARENTPROCESS_DETECT, ALLOW_INHERITANCE, DISABLE_WRAPPERS, DISABLE_DXGI_WRAPPERS, PRUNE_UNSUPPORTED_FORMATS, ENABLE_ALPHA_FORMAT, IGPU_TRANSCODING, DISABLE_CUDA, ALLOW_CP_CAPS_FOR_VIDEO, DISABLE_DURING_SECURE_BOOT]
 
 -
   name: Number of GPUs to use on SLI rendering mode
@@ -347,11 +332,6 @@
   #val_options: [SHUTTER_GLASSES, VERTICAL_INTERLACED, TWINVIEW, NV17_SHUTTER_GLASSES_AUTO, NV17_SHUTTER_GLASSES_DAC0, NV17_SHUTTER_GLASSES_DAC1, COLOR_LINE, COLOR_INTERLEAVED, ANAGLYPH, HORIZONTAL_INTERLACED, SIDE_FIELD, SUB_FIELD, CHECKERBOARD, INVERSE_CHECKERBOARD, TRIDELITY_SL, TRIDELITY_MV, SEEFRONT, STEREO_MIRROR, FRAME_SEQUENTIAL, AUTODETECT_PASSIVE_MODE, AEGIS_DT_FRAME_SEQUENTIAL, OEM_EMITTER_FRAME_SEQUENTIAL, USE_HW_DEFAULT, DEFAULT_GL]
 
 -
-  name: Stereo - Win8 support
-  value:
-  #val_options: [OFF, SRS_1714_WIN8_STEREO, WIN8_STEREO_EXPORT_IF_ENABLED]
-
--
   name: Stereo - Dongle Support
   value:
   #val_options: [OFF, DAC, DLP]
@@ -385,11 +365,6 @@
   name: Maximum pre-rendered frames
   value: APP_CONTROLLED
   #val_options: [MIN, MAX, APP_CONTROLLED]
-
--
-  name: Dynamic tiling
-  value: OFF
-  #val_options: [OFF, ON]
 
 -
   name: Texture filtering - Anisotropic sample optimization
