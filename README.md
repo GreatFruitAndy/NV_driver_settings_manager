@@ -1,9 +1,19 @@
 NVIDIA graphics driver setting manager based on NVAPI (https://developer.nvidia.com/nvapi)
 
+
+the libs u need to compile with are:
+
+
 current supported nvapi version: 352
 https://developer.nvidia.com/gameworksdownload#?dn=nvapi-r352
 
-the libs u need to compile with are:
+download and extarct then add it to the include directory
+ right click on project -> properties -> Configuration Properties-> VC++ Directories
+ Y:\Downloads\R352-developer
+right click on project -> properties -> Configuration Properties-> Library Directories
+ and add
+ y:\Downloads\R352-developer\x86
+
 
 u need VC++ 2010
 
@@ -36,6 +46,7 @@ u need VC++ 2010
  i'v already compiled the libs of yaml under this project /Libs
  
  Compile the project under debug
+ 
  
  
  

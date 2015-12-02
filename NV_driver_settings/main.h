@@ -3,7 +3,9 @@
 //#include <stl.hpp>
 //#include <boost.h>
 
-#include "y:\Downloads\boost_1_59_0\boost\format.hpp"
+#include <boost/format.hpp>
+
+//C:\Program Files (x86)\Boost\include\boost
 
 #include <iostream>
 #include <fstream>
